@@ -12,4 +12,5 @@ Feature: Weather Reporting Comparator of Accuweather and OpenWeather
     Examples:
     |City|
     |Pune|
+    |bengaluru|
 
