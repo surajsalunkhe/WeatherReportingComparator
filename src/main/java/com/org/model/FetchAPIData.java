@@ -35,12 +35,12 @@ public class FetchAPIData {
             JSONObject json=(JSONObject) parser.parse(response1.body().asString());
             //String temp=(String) json.get("main.temp");
             JSONObject mainobj = (JSONObject) json.get("main");
-            System.out.println("@@#$$!"+mainobj);
+            System.out.println(mainobj);
             double temp = (double) mainobj.get("temp");
             long humidity = (long) mainobj.get("humidity");
             weatherInfo.setTemp(temp);
             weatherInfo.setHumidity(humidity);
-            System.out.println("@@#$$!"+temp);
+            System.out.println(temp);
         } catch (ParseException e) {
             e.printStackTrace();
         }

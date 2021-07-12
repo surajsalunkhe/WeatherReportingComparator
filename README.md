@@ -39,6 +39,7 @@ Project Component:
                                 /src/test/resources/extent.properties
                                 /src/test/resources/extent-config.xml
                                 /src/test/resources/cucumber.properties
+    Utility                    : For Adblocking plugin to block ads unblocker.crx 
                                 
  Technologies Used:
 
