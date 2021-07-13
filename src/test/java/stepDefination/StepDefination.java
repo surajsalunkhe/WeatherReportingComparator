@@ -61,9 +61,9 @@ public class StepDefination {
 			double difference = Double.valueOf(df.format(diff));
 			System.out.println("Difference in Temperature:"+Math.abs(difference));
 			if (difference < tempratureVairance) {
-				Assert.assertTrue("Current temperature difference of OpenWeather with Acuwheather website is in variance in range="+tempratureVairance,true);
+				Assert.assertTrue("Current temperature difference of OpenWeather with Accuweather website is in variance in range="+tempratureVairance,true);
 			} else {
-				Assert.assertTrue("Current temperature difference of OpenWeather with Acuwheather website is out of variance range="+tempratureVairance,false);
+				Assert.assertTrue("Current temperature difference of OpenWeather with Accuweather website is out of variance range="+tempratureVairance,false);
 			}
 		} if (weatherInfo.getHumidity() != weatherInfo1.getHumidity()) {
 			double diff = weatherInfo1.getHumidity() - weatherInfo.getHumidity();
@@ -71,13 +71,13 @@ public class StepDefination {
 			double difference = Double.valueOf(df.format(diff));
 			System.out.println("Difference in Humidity:"+Math.abs(difference));
 			if (difference < humidtyvariance) {
-				Assert.assertTrue("Current Humidity difference of OpenWeather with Acuwheather website is in variance in range="+humidtyvariance,true);
+				Assert.assertTrue("Current Humidity difference of OpenWeather with Accuweather website is in variance in range="+humidtyvariance,true);
 			} else {
-				Assert.assertTrue("Current Humidity difference of OpenWeather with Acuwheather website is out of variance range="+humidtyvariance,false);
+				Assert.assertTrue("Current Humidity difference of OpenWeather with Accuweather website is out of variance range="+humidtyvariance,false);
 			}
 		} else {
-			Assert.assertEquals(String.valueOf(weatherInfo.getTemp()), String.valueOf(weatherInfo1.getTemp()), "Temperature matched from OpenWeather with Acuwheather website");
-			Assert.assertEquals(String.valueOf(weatherInfo.getHumidity()), String.valueOf(weatherInfo1.getHumidity()), "Humidity matched from OpenWeather with Acuwheather website");
+			Assert.assertEquals(String.valueOf(weatherInfo.getTemp()), String.valueOf(weatherInfo1.getTemp()), "Temperature matched from OpenWeather with Accuweather website");
+			Assert.assertEquals(String.valueOf(weatherInfo.getHumidity()), String.valueOf(weatherInfo1.getHumidity()), "Humidity matched from OpenWeather with Accuweather website");
 		}
 
 	}
